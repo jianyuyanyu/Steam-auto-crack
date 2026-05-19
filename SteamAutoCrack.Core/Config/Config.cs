@@ -69,7 +69,7 @@ public class Config
     /// </summary>
     public static bool SaveCrackConfig
     {
-        get => _SaveCrackConfig;
+        get => CheckConfigFile();
         set
         {
             if (value)
