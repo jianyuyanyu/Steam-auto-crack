@@ -505,10 +505,10 @@ public partial class MainWindow
             if (!Directory.Exists(Config.GoldbergPath)) return false;
             var filelist = new List<string>
             {
-                Path.Combine(Config.GoldbergPath, "x64", "steam_api64.dll"),
-                Path.Combine(Config.GoldbergPath, "x32", "steam_api.dll"),
+                Path.Combine(Config.GoldbergPath, "regular", "x64", "steam_api64.dll"),
+                Path.Combine(Config.GoldbergPath, "regular", "x86", "steam_api.dll"),
                 Path.Combine(Config.GoldbergPath, "experimental", "x64", "steam_api64.dll"),
-                Path.Combine(Config.GoldbergPath, "experimental", "x32", "steam_api.dll")
+                Path.Combine(Config.GoldbergPath, "experimental", "x86", "steam_api.dll")
             };
             foreach (var file in filelist)
                 if (!File.Exists(file))
